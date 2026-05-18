@@ -4,9 +4,9 @@
 #include <string>
 #include "../models/models.h"
 
-// ============================================================================
+
 // 1. CÁC HÀM XỬ LÝ CHUỖI VÀ ĐỊNH DẠNG (STRING MANIPULATION)
-// ============================================================================
+
 
 /**
  * @brief Xóa khoảng trắng thừa ở đầu và cuối chuỗi (Trim).
@@ -27,9 +27,9 @@ std::string trim(const std::string& str);
 int splitString(const std::string& str, char delim, std::string*& outArray);
 
 
-// ============================================================================
+
 // 2. CÁC THUẬT TOÁN SẮP XẾP TỐI ƯU (EFFICIENT SORTING ALGORITHMS)
-// ============================================================================
+
 
 /**
  * @brief Thuật toán Quick Sort để sắp xếp mảng động các con trỏ LogRecord theo thứ tự tăng dần của timestamp.
@@ -46,9 +46,7 @@ void quickSortLogs(LogRecord** arr, int low, int high);
 void swapLogPointers(LogRecord*& a, LogRecord*& b);
 
 
-// ============================================================================
 // 3. KIỂM TRA LOGIC DỮ LIỆU (VALIDATION UTILITIES)
-// ============================================================================
 
 /**
  * @brief Kiểm tra xem mã vị trí địa lý có nằm trong danh sách hợp lệ của đề bài hay không.

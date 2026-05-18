@@ -4,9 +4,9 @@
 #include "../models/models.h"
 #include <string>
 
-// ============================================================================
+
 // 1. HÀM BĂM CHUỖI (HASH FUNCTIONS)
-// ============================================================================
+
 /**
  * @brief Hàm băm chuỗi sử dụng thuật toán FNV-1a (hoặc DJB2) để phân phối đều dữ liệu.
  * @param key Chuỗi ký tự cần băm (ví dụ: user_id, resource_id)
@@ -16,9 +16,9 @@
 int hashFunction(const std::string& key, int bucket_size);
 
 
-// ============================================================================
+
 // 2. CÁC HÀM QUẢN LÝ BẢNG BĂM (LIFECYCLE MANAGEMENT)
-// ============================================================================
+
 /**
  * @brief Khởi tạo bảng băm, cấp phát mảng động cho các buckets.
  * @param ht Con trỏ trỏ đến HashTable cần khởi tạo
@@ -41,9 +41,9 @@ void clearHashTable(HashTable& ht);
 void destroyHashTable(HashTable& ht);
 
 
-// ============================================================================
+
 // 3. THAO TÁC TRÊN BẢNG BĂM (OPERATIONS)
-// ============================================================================
+
 /**
  * @brief Chèn một bản ghi LogRecord vào bảng băm dựa trên một thuộc tính khóa (Key).
  * @param ht Bảng băm cần chèn

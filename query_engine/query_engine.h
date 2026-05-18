@@ -4,9 +4,9 @@
 #include <string>
 #include "../models/models.h"
 
-// ============================================================================
+
 // 1. CÁC CHỨC NĂNG GIỮA KỲ (MIDTERM QUERIES)
-// ============================================================================
+
 
 /**
  * @brief Chức năng 1: Liệt kê hành trình truy xuất Device -> App -> Resource của 1 User
@@ -23,7 +23,7 @@ void printUserJourney(const HashTable& userTable,
 
 /**
  * @brief Chức năng 2: Liệt kê hành trình truy xuất User -> Device -> App của 1 Resource
- * trong khoảng thời gian cho trước[cite: 39].
+ * trong khoảng thời gian cho trước.
  * @param resourceTable Bảng băm tra cứu theo Resource ID
  * @param resource_id Mã định danh tài nguyên cần tra cứu 
  * @param start_time Thời gian bắt đầu khoảng tìm kiếm (epoch time) 
@@ -45,9 +45,9 @@ void printTop10Resources(const HashTable& resourceTable,
                          long long end_time);
 
 
-// ============================================================================
+
 // 2.FINAL TERM - ANOMALY DETECTION
-// ============================================================================
+
 
 /*
 // Phát hiện bất thường dựa trên ngưỡng [cite: 48]

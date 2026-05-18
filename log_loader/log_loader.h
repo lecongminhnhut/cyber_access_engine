@@ -4,9 +4,9 @@
 #include <string>
 #include "../models/models.h"
 
-// ============================================================================
+
 // 1. CÁC HÀM BỔ TRỢ TÁCH CHUỖI (PARSING UTILITIES)
-// ============================================================================
+
 /**
  * @brief Tách một dòng log thô từ CSV thành các thuộc tính của LogRecord.
  * @param line Chuỗi thô đọc từ 1 dòng trong file CSV
@@ -16,9 +16,9 @@
 bool parseCSVLine(const std::string& line, LogRecord* record);
 
 
-// ============================================================================
+
 // 2. HÀM ĐỌC VÀ ĐỔ DỮ LIỆU VÀO HỆ THỐNG (CORE LOADER)
-// ============================================================================
+
 /**
  * @brief Đọc file log CSV và phân phối dữ liệu vào các cấu trúc quản lý trên bộ nhớ.
  * @param filename Đường dẫn tới file log .csv
